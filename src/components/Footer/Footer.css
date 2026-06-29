@@ -1,0 +1,105 @@
+#footer {
+    min-height: 30vh;
+    width: 100%;
+    background-color: rgba(43, 38, 38, 0.939);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 20px;
+    color: white;
+    padding: 20px;
+
+    & .footertop {
+        width: 100%;
+        height: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    & .footerbuttom {
+        width: 100%;
+        height: 10%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    & .heading {
+        font-size: 25px;
+        font-weight: 500;
+    }
+
+    & .box {
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        flex-direction: column;
+        gap: 20px;
+        margin: 20px;
+    }
+
+    & span {
+        font-size: 15px;
+        font-weight: 300;
+    }
+
+    & .contactbtn {
+        display: flex;
+        align-items: center;
+        padding: 10px 40px 10px 40px;
+        margin-top: 40px;
+        gap: 5px;
+        color: white;
+        background-color: red;
+        font-size: 18px;
+        border-radius: 30px;
+        border: none;
+        transition: all 0.2s;
+        cursor: pointer;
+        box-sizing: border-box;
+        border: 1px solid red;
+    }
+
+    & .contactbtn:active{
+        transform: scale(0.97);
+    }
+
+
+
+}
+
+@media (max-width : 670px) {
+    #footer {
+        & .box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 20px;
+            margin: 20px;
+        }
+
+        & .contactbtn {
+            display: flex;
+            align-items: center;
+            padding: 10px 30px 10px 30px;
+            margin-top: 40px;
+            gap: 5px;
+            color: white;
+            background-color: red;
+            font-size: 17px;
+            border-radius: 30px;
+            border: none;
+            transition: all 0.2s;
+            cursor: pointer;
+            box-sizing: border-box;
+            border: 1px solid red;
+        }
+
+    }
+}

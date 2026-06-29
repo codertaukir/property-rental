@@ -1,0 +1,326 @@
+#nav {
+    width: 100%;
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.nav1 {
+    width: 100%;
+    height: 50%;
+    background-color: white;
+    border-bottom: 0.5px solid rgba(81, 77, 76, 0.901);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+    transition: all 0.3s;
+
+
+    & .logo {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        & img {
+            width: 35px;
+        }
+
+        & h1 {
+            font-size: 1.2rem;
+            font-weight: 400;
+            color: red;
+        }
+    }
+
+    & .searchbar {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+
+        & input {
+            width: 250px;
+            padding: 10px;
+            box-sizing: border-box;
+            border-radius: 20px;
+            padding-left: 20px;
+            border: 0.5px solid rgba(81, 77, 76, 0.901);
+            font-size: 15px;
+            color: black;
+            outline: none;
+        }
+
+        & button {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            gap: 5px;
+            color: white;
+            background-color: red;
+            font-size: 16px;
+            border-radius: 30px;
+            border: none;
+            transition: all 0.2s;
+            cursor: pointer;
+            box-sizing: border-box;
+            border: 1px solid red;
+
+            & svg {
+                width: 1.2rem;
+                height: 1.2rem;
+            }
+        }
+
+        & button:hover {
+            background: transparent;
+            color: red;
+
+
+            & svg {
+                background: transparent;
+                color: red;
+            }
+        }
+
+        & button:active {
+            transform: scale(0.95);
+
+        }
+    }
+
+
+    & .ham {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 2px;
+        gap: 20px;
+
+        & #btn1 {
+            border: none;
+            outline: none;
+            background-color: white;
+            font-size: 16px;
+            font-weight: 300;
+            padding: 10px 20px 10px 20px;
+            border-radius: 30px;
+            transition: all 0.3s;
+            box-sizing: border-box;
+
+        }
+
+        & #btn1:hover {
+            background-color: rgba(152, 150, 150, 0.523);
+            cursor: pointer;
+
+        }
+
+        & #btn1:active {
+            transform: scale(0.95);
+
+        }
+
+        & #btn2 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+            border: 0.5px solid rgba(81, 77, 76, 0.901);
+            outline: none;
+            font-size: 16px;
+            font-weight: 300;
+            cursor: pointer;
+            padding: 10px 20px 10px 20px;
+            background-color: white;
+            border-radius: 30px;
+            transition: all 0.3s;
+            box-sizing: border-box;
+
+            & .active {
+                border-bottom: 10px solid rgb(246, 67, 67);
+
+            }
+
+            & span {
+                width: 1.3rem;
+                height: 1.3rem;
+                fill: rgba(92, 89, 89, 0.651);
+            }
+
+            & svg {
+                width: 1.3rem;
+                height: 1.3rem;
+                fill: rgba(92, 89, 89, 0.651);
+            }
+
+        }
+
+        & #btn2:hover {
+            box-shadow: 2px 2px 5px black;
+        }
+
+    }
+
+    & .hamburger {
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        flex-direction: column;
+        gap: 10px;
+        background-color: rgba(244, 243, 243, 0.971);
+        position: absolute;
+        width: 220px;
+        height: 230px;
+        padding: 10px;
+        right: 3%;
+        top: 55%;
+        border: 0.5px solid rgba(212, 210, 210, 0.901);
+        border-radius: 40px;
+        transition: all 0.3s;
+        box-shadow: 2px 2px 15px black;
+
+        & a {
+            text-decoration: none;
+            margin-left: 20px;
+            width: 80%;
+            box-sizing: border-box;
+        }
+
+
+
+        & .ham1 {
+            color: rgb(103, 100, 100);
+            border-radius: 30px;
+            padding: 10px 20px 10px 20px;
+
+        }
+
+        & .ham1:hover {
+            background-color: rgba(210, 209, 209, 0.901);
+            cursor: pointer;
+        }
+
+        & .ham1:active {
+            transform: scale(0.98);
+        }
+    }
+
+
+}
+
+
+.nav2 {
+    width: 100%;
+    height: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 25px;
+    box-sizing: border-box;
+    transition: all 0.3s;
+
+    & .active {
+        border-bottom: 1px solid rgb(246, 67, 67);
+        margin-bottom: 5px;
+        color: black;
+
+    }
+    & .active:hover{
+         border-bottom: 1px solid rgb(246, 67, 67);
+        margin-bottom: 5px;
+        color: red;
+    }
+
+    & .svg-bar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        cursor: pointer;
+        transition: all 0.3s;
+
+
+
+        & h3 {
+            font-size: 15px;
+            font-weight: 300;
+            color: rgba(81, 77, 76, 0.901);
+        }
+
+        & svg {
+            height: 20px;
+            width: 20px;
+        }
+    }
+
+    & .svg-bar:active {
+        transform: scale(0.96);
+    }
+
+    & .svg-bar:hover {
+        color: red;
+    }
+
+    & h3:hover {
+        color: red;
+    }
+
+}
+
+@media (max-width : 900px) {
+    #btn1 {
+        display: none;
+    }
+}
+
+@media (max-width : 800px) {
+    .logo h1 {
+        display: none;
+    }
+
+    .nav1 {
+        overflow: hidden;
+        padding: 10px;
+
+        & .searchbar input {
+            width: 130px;
+            font-size: 12px;
+        }
+
+        & .searchbar span {
+            display: none;
+        }
+
+        & .ham #btn2 {
+            width: 40x;
+            height: 40px;
+            padding: 10px;
+            border: none;
+
+        }
+
+        & #btn2 span {
+            display: none;
+        }
+
+    }
+
+    .nav2 {
+        overflow-y: hidden;
+        overflow-x: scroll;
+        justify-content: start;
+        padding: 10px;
+    }
+
+    .svg-bar {
+        flex-shrink: 0;
+        scrollbar-width: none;
+    }
+
+
+}
